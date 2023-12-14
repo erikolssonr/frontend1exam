@@ -51,10 +51,6 @@ function decrementAmount(e){
     }
 }
 
-function summarizeTotalCost(){
-    
-}
-
 
 iconCart.addEventListener('click', () => {
     body.classList.toggle('showCart');
