@@ -11,8 +11,66 @@ body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0,0,0,0.75)),url(images/igwotlS.jpeg);
     background-size: cover;
     background-position: center;
-    text-align: center;
 }
+
+.hero-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 95vh;
+    padding: 0rem calc ((100vw - 1300px) / 2 );
+
+}
+
+.column-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 0rem 2rem;
+}
+.column-left h1 {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+
+.column-left p{
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.hero-btn {
+    padding: 1rem 3rem;
+    font-size: 2rem;
+    border: none;
+    color: #fff;
+    background: rgb(71, 2, 2);
+    cursor: pointer;
+    border-radius: 2rem;
+}
+
+.hero-btn:hover {
+    background: black;
+}
+
+.column-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 2rem;
+}
+
+.hero-img {
+    width: 100%;
+    
+}
+
+.hero-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+
 
 svg {
     width: 60px;
@@ -22,7 +80,6 @@ svg {
 .icon-cart {
     position: relative;
 }
-
 
 .cartTab {
     padding-top: 60px;
@@ -48,13 +105,11 @@ body.showCart .cartTab{
     width: 10px;
 }
 
-
 body.showCart .gallery-header,
 body.showCart .gallery {
     transform: translateX(-350px);
     transition: .5s;
 }
-
 
 .cartTab h1{
     padding: 20px;
@@ -133,14 +188,6 @@ body.showCart .gallery {
     transition: 0.3s;
 }
 
-.main-page-content {
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    text-align:center;
-    color: #fff;
-}
 
 .about {
     color: #fff;
@@ -170,6 +217,7 @@ body.showCart .gallery {
     color: #fff;
 }
 
+h1,
 h2,
 p {
     display: flex;
@@ -565,5 +613,10 @@ input {
         background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0,0,0,0.75)),url(images/igwotlS.jpeg);
         background-repeat: no-repeat;
         background-attachment: fixed;
+    }
+
+    .hero-container {
+        grid-template-columns: 1fr;
+
     }
 }
