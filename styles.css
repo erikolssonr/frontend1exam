@@ -120,6 +120,7 @@ body.showCart .gallery {
 .btn {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    height: 50px;
 }
 
 .cartTab button {
@@ -175,6 +176,14 @@ body.showCart .gallery {
 
 .listCart{
     overflow: auto;
+}
+
+.checkoutTotal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    font-size: 30px;
+    background: black;
 }
 
 .header {

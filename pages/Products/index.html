@@ -68,7 +68,7 @@
 
     <div class="cartTab">
         <h1>Kundvagn</h1>
-        <div class="listCart">
+        <div class="listCart" id="listCart">
             
             <div class="item">
                 
@@ -81,7 +81,7 @@
                 <div class="totalPrice" id="snus1Price">
                     50 :-
                 </div>
-                <div class="quantity">
+                <div class="quantity">  
                     <span class="minus" onclick="decrementAmount(event)">-</span>
                     <span class="amount" id="snus1Amount">0</span>
                     <span class="plus" onclick="incrementBtnOnClick(event)" id="snus1">+</span>
@@ -123,7 +123,10 @@
             </div>
             
         </div>
-        
+        <div class="checkoutTotal">
+            <div class="total">Total:</div>
+            <div class="totalAmount"></div>
+        </div>
         <div class="btn">
             <button class="closeCart">Stäng</button>
             <button class="checkOut">Köp varor</button>
